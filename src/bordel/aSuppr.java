@@ -15,7 +15,7 @@ public class aSuppr {
 		jeff.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		jeff.setVisible(true);
 		jeff.setSize(500, 500);
-		String keys = "azertyuiop";
+		String keys = "qzsedftgyhujk";
 		jeff.addKeyListener(new KeyListener() {
 			
 			@Override
@@ -36,7 +36,7 @@ public class aSuppr {
 				try {
 				Receiver rcvr = MidiSystem.getReceiver();
 				ShortMessage sm = new ShortMessage();
-				sm.setMessage(ShortMessage.NOTE_ON,0,57+keys.indexOf(e.getKeyChar()),127);
+				sm.setMessage(ShortMessage.NOTE_ON,0,48+keys.indexOf(e.getKeyChar()),127);
 				rcvr.send(sm, -1);
 				//do do# re re# mi fa fa# sol sol# la la# si 
 				}catch(Exception e1) {
