@@ -10,6 +10,7 @@ public class laenMorceau {
 	Sequence seq = new Sequence(Sequence.PPQ, 4);
 	//on fait le f* prelude de Bach
 	Track tra = seq.createTrack();
+	tra.add(new MidiEvent(new ShortMessage(192,0,6,1), 0));
 	String morceau = "C 4 100 0 2;E 4 100 2 2;G 4 100 4 2;C 5 100 6 2;E 5 100 8 2";
 	morceau += ";G 4 100 10 2;C 5 100 12 2;E 5 100 14 2";
 	morceau += ";C 4 100 16 2;E 4 100 18 2;G 4 100 20 2;C 5 100 22 2;E 5 100 24 2";

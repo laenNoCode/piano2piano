@@ -35,9 +35,10 @@ public class aSuppr {
 				// TODO Auto-generated method stub
 				try {
 				Receiver rcvr = MidiSystem.getReceiver();
+				
 				ShortMessage sm = new ShortMessage();
 				sm.setMessage(ShortMessage.NOTE_ON,0,48+keys.indexOf(e.getKeyChar()),127);
-				rcvr.send(sm, -1);
+				rcvr.send(sm, 0);
 				//do do# re re# mi fa fa# sol sol# la la# si 
 				}catch(Exception e1) {
 					e1.printStackTrace();

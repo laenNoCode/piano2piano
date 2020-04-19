@@ -27,7 +27,7 @@ public class note {
 		not = not.substring(4);
 		System.out.println(not);
 		this.volume = Integer.parseInt(not.split(" ")[0]);
-		this.quand = Integer.parseInt(not.split(" ")[1]);
+		this.quand = Integer.parseInt(not.split(" ")[1])+1;
 		this.duree = Integer.parseInt(not.split(" ")[2]);
 	}
 	public void addToTrack(Track tra) throws InvalidMidiDataException {
